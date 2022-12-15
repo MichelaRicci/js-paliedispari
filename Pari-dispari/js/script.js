@@ -21,17 +21,16 @@ enter.addEventListener("click", function() {
 
     const evenOdd = document.getElementById('evenodd').value;
 
-    const numberFromUser = document.getElementById('numberFromUser').value;
+
+    let numberFromUser = document.getElementById('numberFromUser').value;
 
     if (numberFromUser > 5 || numberFromUser < 1){
         alert("Inserisci un numero da 1 a 5");
     }
-})
 
 
 
-
-// Genero numero random per il computer
+// Funzione per generare numero random per il computer 
 
 function getRandomNumber(min, max) {
     max++; 
@@ -42,3 +41,18 @@ function getRandomNumber(min, max) {
 
 const cpuNumber = getRandomNumber(1, 5);
 console.log(cpuNumber);
+
+})
+
+
+//Somma del numero user e cpu
+
+const sum = userNumber + cpuNumber; 
+
+console.log(sum);
+
+
+
+
+
+
