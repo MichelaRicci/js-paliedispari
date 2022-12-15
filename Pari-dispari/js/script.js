@@ -10,7 +10,35 @@ console.log('JS OK');
 
 // Recupero elementi dal form 
 
-const evenOdd = document.getElementById('evenodd');
+const enter = document.getElementById('enter');
 
-const numberFromUser = document.getElementById('numberFromUser');
 
+// Collego event listener al button 
+
+enter.addEventListener("click", function() {
+
+    // Recupero dati dal form
+
+    const evenOdd = document.getElementById('evenodd').value;
+
+    const numberFromUser = document.getElementById('numberFromUser').value;
+
+    if (numberFromUser > 5){
+        alert
+    }
+})
+
+
+
+
+// Genero numero random per il computer
+
+function getRandomNumber(min, max) {
+    max++; 
+
+    const randomNumber = Math.floor(Math.random() * (max - min)) + min; 
+    return randomNumber;
+}
+
+const cpuNumber = getRandomNumber(1, 5);
+console.log(cpuNumber);
