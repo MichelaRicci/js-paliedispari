@@ -40,7 +40,7 @@ enter.addEventListener("click", function() {
         return randomNumber;
     }
 
-    const cpuNumber = getRandomNumber(1, 5);
+    const cpuNumber = parseInt(getRandomNumber(1, 5));
     console.log(cpuNumber);
 
     //Somma del numero user e cpu
