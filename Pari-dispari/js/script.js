@@ -28,7 +28,7 @@ enter.addEventListener("click", function() {
         alert("Inserisci un numero da 1 a 5");
     }
 
-    const userNumber = document.getElementById('numberFromUser').value;
+    const userNumber = parseInt(document.getElementById('numberFromUser').value);
 
 
     // Funzione per generare numero random per il computer 
