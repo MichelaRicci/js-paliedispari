@@ -9,6 +9,9 @@ console.log('JS OK');
 
 const word = document.getElementById('word');
 
+
+// Funzione per definire la parola al contrario 
+
 function reverseWord(word){
     let reverse = '';
 
@@ -17,8 +20,16 @@ function reverseWord(word){
     }
 
     return reverse;
+
 }
 
-const reversedWord = reverseWord('i topi non avevano nipoti');
+const reversedWord = reverseWord(word);
 
 console.log(reversedWord);
+
+
+if (word === reversedWord) {
+    console.log('parola palindroma')
+} else {
+    console.log('parola non palindroma')
+}

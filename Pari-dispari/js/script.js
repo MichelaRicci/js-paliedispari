@@ -50,9 +50,39 @@ enter.addEventListener("click", function() {
 })
 
 
-
-
 // Funzione per stabilire se la somma è pari o dispari
+
+function isEven(sum) {
+    if (sum % 2 === 0) {
+
+        console.log('Somma pari')
+
+        return true;
+   
+    } else {
+
+        console.log('Somma dipari')
+        return false;
+
+      
+    }
+}
+
+
+// Dichiariamo chi ha vinto
+
+if (evenOdd == 'pari' && isEven(sum) == true){
+    alert('Hai vinto!');
+   }
+   else if (evenOdd == 'dispari' && isEven(sum) == false) {
+     alert('Hai vinto!');
+   }
+   else {
+     alert('Hai perso!');
+}
+
+
+
 
 
 
