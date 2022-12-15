@@ -22,13 +22,13 @@ enter.addEventListener("click", function() {
     const evenOdd = document.getElementById('evenodd').value;
 
 
-    let numberFromUser = document.getElementById('numberFromUser').value;
+    let numberFromUser = parseInt(document.getElementById('numberFromUser').value);
 
     if (numberFromUser > 5 || numberFromUser < 1){
         alert("Inserisci un numero da 1 a 5");
     }
 
-    const userNumber = numberFromUser; 
+    const userNumber = document.getElementById('numberFromUser').value;
 
 
     // Funzione per generare numero random per il computer 
@@ -45,7 +45,7 @@ enter.addEventListener("click", function() {
 
     //Somma del numero user e cpu
 
-    const sum = userNumber + cpuNumber; 
+    const sum = parseInt(userNumber + cpuNumber); 
 
     console.log(sum);
 
