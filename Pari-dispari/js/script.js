@@ -28,28 +28,34 @@ enter.addEventListener("click", function() {
         alert("Inserisci un numero da 1 a 5");
     }
 
+    const userNumber = numberFromUser; 
 
 
-// Funzione per generare numero random per il computer 
+    // Funzione per generare numero random per il computer 
 
-function getRandomNumber(min, max) {
-    max++; 
+    function getRandomNumber(min, max) {
+        max++; 
 
-    const randomNumber = Math.floor(Math.random() * (max - min)) + min; 
-    return randomNumber;
-}
+        const randomNumber = Math.floor(Math.random() * (max - min)) + min; 
+        return randomNumber;
+    }
 
-const cpuNumber = getRandomNumber(1, 5);
-console.log(cpuNumber);
+    const cpuNumber = getRandomNumber(1, 5);
+    console.log(cpuNumber);
+
+    //Somma del numero user e cpu
+
+    const sum = userNumber + cpuNumber; 
+
+    console.log(sum);
 
 })
 
 
-//Somma del numero user e cpu
 
-const sum = userNumber + cpuNumber; 
 
-console.log(sum);
+// Funzione per stabilire se la somma è pari o dispari
+
 
 
 
