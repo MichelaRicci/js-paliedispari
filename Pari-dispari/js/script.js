@@ -23,8 +23,8 @@ enter.addEventListener("click", function() {
 
     const numberFromUser = document.getElementById('numberFromUser').value;
 
-    if (numberFromUser > 5){
-        alert
+    if (numberFromUser > 5 || numberFromUser < 1){
+        alert("Inserisci un numero da 1 a 5");
     }
 })
 
