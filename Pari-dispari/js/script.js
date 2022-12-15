@@ -28,8 +28,6 @@ enter.addEventListener("click", function() {
         alert("Inserisci un numero da 1 a 5");
     }
 
-    const userNumber = parseInt(document.getElementById('numberFromUser').value);
-
 
     // Funzione per generare numero random per il computer 
 
@@ -45,7 +43,7 @@ enter.addEventListener("click", function() {
 
     //Somma del numero user e cpu
 
-    const sum = parseInt(userNumber + cpuNumber); 
+    const sum = parseInt(numberFromUser + cpuNumber); 
 
     console.log(sum);
 
