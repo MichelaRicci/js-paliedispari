@@ -8,7 +8,12 @@
     <script defer src="js/script.js"></script>
 </head>
 <body>
-    <input type="text" min-length="3"  id="word" placeholder="Inserisci una parola">
-    
+    <h2>Inserisci una parola e controlla se è palindroma</h2>
+    <form id="palindrome">
+        <input type="text" minlength="3" required id="word" placeholder="Inserisci una parola">
+        <button type="submit" id="btn">Invia</button>
+    </form>
+
+    <div id="result"></div>
 </body>
 </html>

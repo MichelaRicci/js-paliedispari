@@ -4,32 +4,59 @@ console.log('JS OK');
 // Creare una funzione per capire se la parola inserita è palindroma
 
 
+// FUNCTIONS -------------------------------------------------------------
 
-// Recupero elementi dal form 
+function isPalindrome(word){
+    let result = false;
 
-const word = document.getElementById('word');
-
-
-// Funzione per definire la parola al contrario 
-
-function reverseWord(word){
     let reverse = '';
 
     for(let i = word.length -1; i >= 0; i--) {
         reverse += word[i];
     }
 
-    return reverse;
 
+    if (word === reverse) {
+        result = true;
+    } 
+
+    return result;
 }
 
-const reversedWord = reverseWord(word);
 
-console.log(reversedWord);
+// Recupero elementi dal form 
+
+const wordInput = document.getElementById('word');
+const form = document.getElementById('palindrome');
+
+const resultPalindrome = document.getElementById('result');
 
 
-if (word === reversedWord) {
-    console.log('parola palindroma')
-} else {
-    console.log('parola non palindroma')
-}
+form.addEventListener('submit', function(event){
+
+    // Gestione form in JS 
+    event.preventDefault();
+
+    
+    // Recupero valore dall'input 
+    const word = wordInput.value.trim();
+    
+    // Validazione
+
+    if(word.length < 3) {
+        alert('La parola deve contenere almeno 3 caratteri');
+        return;
+    }
+
+
+    // Creo il messaggio con ternario 
+
+    const message = isPalindrome(word) ? 'La parola è palindroma' : 'La parola non è palindroma';
+
+
+    resultPalindrome.innerText = message;
+
+})
+
+
+
